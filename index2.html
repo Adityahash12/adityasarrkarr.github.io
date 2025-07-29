@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Sarkar - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+        }
+        .link-style {
+            color: #58a6ff;
+        }
+        .link-style:hover {
+            text-decoration: underline;
+        }
+        .accordion-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+        .accordion-header:hover {
+            background-color: #21262d;
+        }
+        .accordion-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #f0f6fc;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+        }
+        .accordion-content.open {
+            max-height: 1000px; /* Adjust as needed */
+        }
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-icon.open {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-6xl p-4 lg:p-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+
+            <!-- Left Column (Sticky Sidebar) -->
+            <aside class="lg:col-span-4 xl:col-span-3 mb-8 lg:mb-0">
+                <div class="lg:sticky lg:top-8">
+                    <!-- Profile Picture -->
+                    <div class="w-48 h-48 mx-auto lg:mx-0 mb-4 flex items-center justify-center bg-slate-800 rounded-full border-2 border-slate-700">
+                        <span class="text-5xl font-bold text-slate-400">AS</span>
+                    </div>
+                    
+                    <!-- Name and Title -->
+                    <h1 class="text-2xl font-bold text-white text-center lg:text-left">Aditya Sarkar</h1>
+                    <p class="mt-1 text-lg text-slate-400 text-center lg:text-left">AI Enthusiast</p>
+                    
+                    <!-- Objective -->
+                    <p class="mt-4 text-slate-400 text-center lg:text-left">
+                        Motivated AI enthusiast seeking to apply skills in Python, ML, and GenAI to impactful projects.
+                    </p>
+                    
+                    <hr class="border-slate-700 my-6">
+
+                    <!-- Contact & Socials -->
+                    <div class="space-y-3 text-slate-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt w-6 text-slate-500"></i>
+                            <span>Bengaluru, India</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope w-6 text-slate-500"></i>
+                            <a href="mailto:adityaanuragsarkar@gmail.com" class="link-style">Email</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-linkedin w-6 text-slate-500"></i>
+                            <a href="https://linkedin.com/in/aditya-sarkar-488474249" target="_blank" class="link-style">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Column (Main Content) -->
+            <main class="lg:col-span-8 xl:col-span-9">
+                <div class="space-y-4">
+                
+                    <!-- Accordion Item 1: Experience -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h2>Experience</h2>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-4 sm:p-6 space-y-6">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-white">AI Intern - Indpro AB</h3>
+                                    <p class="text-sm text-slate-400 mb-2">Apr 2025 – Present</p>
+                                    <ul class="list-disc list-inside space-y-1 text-slate-400">
+                                        <li>Developing AI-driven solutions and exploring generative models for optimization.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-white">Campus Ambassador - Pregrad</h3>
+                                    <p class="text-sm text-slate-400 mb-2">Apr 2024 – May 2025</p>
+                                    <ul class="list-disc list-inside space-y-1 text-slate-400">
+                                        <li>Hosted 15+ webinars, mentored peers, and led a student community.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-white">Collaborator - Swiggy India</h3>
+                                    <p class="text-sm text-slate-400 mb-2">Mar 2025</p>
+                                    <ul class="list-disc list-inside space-y-1 text-slate-400">
+                                        <li>Promoted student offers and created viral social media content. <a href="https://www.instagram.com/reel/DMhT7_EzJ6y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="link-style">View Reel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Accordion Item 2: Leadership & Achievements -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h2>Leadership & Achievements</h2>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-4 sm:p-6">
+                                <ul class="space-y-4">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-user-shield w-6 text-sky-400 mt-1"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-white">School House Captain</h3>
+                                            <p class="text-slate-400">Led and motivated a house of over 200 students, fostering a spirit of teamwork and organizing participation in various inter-school competitions and events.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-theater-masks w-6 text-sky-400 mt-1"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-white">Core Member, Theatrix Club</h3>
+                                            <p class="text-slate-400">Actively involved in the college theatre club, contributing to scriptwriting, stage production, and performances, enhancing creative and collaborative skills.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-award w-6 text-sky-400 mt-1"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-white">Performing Arts Recognition</h3>
+                                            <p class="text-slate-400">Recipient of multiple awards in regional dance and theatre competitions, demonstrating dedication, discipline, and a strong passion for the creative arts.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-trophy w-6 text-sky-400 mt-1"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-white">Community Builder & Fast Learner</h3>
+                                            <p class="text-slate-400">Successfully built a professional network of 500+ on LinkedIn and consistently recognized for being a quick learner and an effective team player in academic and professional settings.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3: Skills -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h2>Core Skills</h2>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                             <div class="p-4 sm:p-6">
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-900/50 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                                    <span class="bg-blue-900/50 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded">C++</span>
+                                    <span class="bg-blue-900/50 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded">LLMs</span>
+                                    <span class="bg-blue-900/50 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded">AWS</span>
+                                    <span class="bg-blue-900/50 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded">Git</span>
+                                    <span class="bg-blue-900/50 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded">Public Speaking</span>
+                                    <span class="bg-blue-900/50 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded">Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4: Education -->
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h2>Education</h2>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-4 sm:p-6 space-y-4">
+                                <div>
+                                    <h3 class="font-semibold text-white">Ramaiah Institute of Technology</h3>
+                                    <p class="text-sm text-slate-400">B.E. in Electronics & Instrumentation</p>
+                                    <p class="text-xs text-slate-500 mt-1">2023 – Present</p>
+                                </div>
+                                <hr class="border-slate-700">
+                                <div>
+                                    <h3 class="font-semibold text-white">Amity International School, Mayur Vihar</h3>
+                                    <p class="text-sm text-slate-400">Senior Secondary School</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-white">The Khaitan School, Noida</h3>
+                                    <p class="text-sm text-slate-400">Nursery to 10th Grade</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const icon = item.querySelector('.accordion-icon');
+
+                header.addEventListener('click', () => {
+                    // Close all other accordions
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.querySelector('.accordion-content').classList.remove('open');
+                            otherItem.querySelector('.accordion-icon').classList.remove('open');
+                        }
+                    });
+
+                    // Toggle the clicked accordion
+                    content.classList.toggle('open');
+                    icon.classList.toggle('open');
+                });
+            });
+
+            // Optionally, open the first accordion by default
+            if (accordionItems.length > 0) {
+                accordionItems[0].querySelector('.accordion-content').classList.add('open');
+                accordionItems[0].querySelector('.accordion-icon').classList.add('open');
+            }
+        });
+    </script>
+
+</body>
+</html>
